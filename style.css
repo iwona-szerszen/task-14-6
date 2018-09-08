@@ -1,0 +1,16 @@
+.counter {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.counter:not(:last-child) {
+	border-bottom: 1px solid #ccc;
+}
+
+.btn {
+	margin: 0 5px;
+	background-color: #fff;
+	border-radius: 15%;
+}
