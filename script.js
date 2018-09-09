@@ -16,7 +16,7 @@ const Counter = React.createClass({
 	},
 	render: function() {
 		console.log('render method: to render component, you MUSTN\'T change state or props here')
-		return React.createElement('div', {key: this.props.counter.id, onClick: this.increment, className: 'counter'},
+		return React.createElement('div', {key: this.props.counter.id, className: 'counter'},
 			React.createElement('h3', {}, `${this.props.counter.name} Counter: ${this.state.counter}`),
 			React.createElement('button', {className: 'btn', onClick: this.increment}, 
 				React.createElement('img', {src: 'https://png.icons8.com/ultraviolet/50/000000/plus.png'})),
@@ -46,12 +46,12 @@ const Counter = React.createClass({
 	},
 	increment: function() {
 		this.setState({
-			counter: this.state.counter++
+			counter: this.state.counter + 1
 		});
 	},
 	decrement: function() {
 		this.setState({
-			counter: this.state.counter--
+			counter: this.state.counter - 1
 		});
 	}
 });
